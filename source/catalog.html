@@ -2,34 +2,32 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-    <header class="page-header">
-      <div class="page-header__logo-wrapper">
-        <a class="page-header_logo">
-          <img class="page-header__logo-image"  src="https://via.placeholder.com/150x150" width="33" height="38" alt="Логотип Кэт энерджи">
+    <div class="page-wrapper">
+      <header class="page-header">
+        <a class="page-header__logo">
+          <img src="https://via.placeholder.com/150x150" width="33" height="38" alt="Логотип Кэт энерджи">
         </a>
-        <h1 class="page-header__logo-header"></h1>
-      </div>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
-            <a>"Главная"></a>
-            </li>
-            <li class="main-nav__item">
-            <a href="Catalog.html">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-            <a href="Forms.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main class="page-main">
+        <nav class="page-header__main-nav main-nav main-nav--inner">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="Index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link">Каталог продукции</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="Forms.html">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    <main>
       <h1 class="page-main__title">Каталог продукции</h1>
       <section class="main-catalog">
         <ul class="main-catalog__list optional-catalog">

@@ -1,4 +1,18 @@
-$primary-font: "Oswald", "Arial", sans-serif;
+//шрифт
+$first-font: "Oswald", "Arial", sans-serif;
+$second-font: "Arial", sans-serif;
+$font-size: 14px;
+$font-weight:400;
+
+
+//цвета
 $white: #ffffff;
 $grey: #f2f2f2;
 $green:#68b738;
+$dark: #111111;
+
+
+//размер
+$tablet-width:768px;
+$desktop-width:1440px;
+$mobile-width-only:767px;

@@ -1,0 +1,165 @@
+.case{
+    margin-top: 47px;
+    min-height: 705px;
+    background-color:$grey;
+}
+
+
+.case__title{
+    color:$dark;
+    font-size: 36px;
+    line-height: 60px;
+    padding: 33px 107px 33px 20px;
+}
+
+
+.case__description{
+    height: 103px;
+    width: 266px;
+    color: #444444;
+    font-family:$second-font;
+    line-height: 18px;
+    padding-right: 34px;
+    padding-bottom: 27px;
+    padding-left: 20px;
+}
+
+.case__stats-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.case__stats-item{
+    color:$dark;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.case__legend{
+    color: #444444;
+    font-family:$second-font;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.case__text{
+    width: 187px;
+    color:$dark;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding-top: 38px;
+    padding-right: 66px;
+    padding-bottom: 44px;
+    padding-left: 67px;
+}
+
+.case__button{
+    color: #111111;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+@media(min-width: $tablet-width){
+    .case{
+        background: $white;
+    }
+}
+
+@media(min-width: $tablet-width){
+    .case__title{
+        margin: 107px 416px 60px 31px;
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+}
+
+@media(min-width: $tablet-width){
+    .case__description{
+        width: 674px;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 63px 72px 31px;
+    }
+}
+
+@media(min-width: $tablet-width){
+    .case__stats-item{
+        font-size: 30px;
+        line-height: 37px;
+    }
+}
+
+@media(min-width: $tablet-width){
+    .case__legend{
+        font-size: 14px;
+        line-height: 14px;
+    }   
+}
+
+@media(min-width: $tablet-width){
+    .case__text{
+        font-size: 20px;
+        line-height: 20px;
+        text-transform: uppercase;
+        padding-top: 69px;
+        padding-right: 31px;
+        padding-left: 167px;
+    }
+}
+
+@media(min-width: $tablet-width){
+    .case__button{
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+
+
+@media(min-width: $desktop-width){
+    .case{
+        background:$white;
+    }
+}
+
+@media(min-width: $desktop-width){
+    .case__wrapper{
+        color: $grey;
+        margin-top: 66px;
+    }
+}
+
+@media(min-width: $desktop-width){
+    .case__title{
+        margin-top: 90px;
+        margin-left: 110px;
+        font-size: 60px;
+        line-height: 60px;
+    }
+}
+
+@media(min-width: $desktop-width){
+    .case__description{
+        width: 430px;
+        font-size: 16px;
+        line-height: 24px;
+        padding-top: 76px;
+        padding-bottom: 71px;
+        padding-left: 111px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

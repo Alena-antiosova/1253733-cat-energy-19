@@ -1,0 +1,99 @@
+.profile__title{
+    width: 255px;
+    color: $dark;
+    font-family:$first-font;
+    font-size: 36px;
+    font-weight:$font-weight;
+    line-height: 60px;
+}
+
+.profile__text{
+    width: 226px;
+    color: $dark;
+    font-family:$first-font;
+    font-size:$first-font;
+    font-weight:$font-weight;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.profile__item label{
+    color: #222222;
+    font-family:$first-font;
+    font-size: 16px;
+    font-weight:$font-weight;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.profile__item input{
+    color: #444444;
+    font-family:$first-font;
+    font-size: 16px;
+    font-weight:$font-weight;
+    line-height: 18px;
+    text-transform: uppercase;
+    border: 1px solid #cdcdcd;
+}
+
+.profile__filter{
+    width: 320px;
+    height: 158px;
+    border: 1px solid #ededed;
+}
+
+.profile__filter-item label{
+    color: #222222;
+    font-family:$first-font;
+    font-size: 16px;
+    font-weight:$font-weight;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.profile__text--dash{
+    color:$dark;
+    font-family:$first-font;
+    font-size: 24px;
+    font-weight:$font-weight;
+    line-height: 24px;
+}
+
+.profile-application textarea{
+    width: 249px;
+    color: #444444;
+    font-family:$first-font;
+    font-size: 16px;
+    font-weight:$font-weight;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.profile__checkbox-item{
+    color: #222222;
+    font-family:$first-font;
+    font-size: 16px;
+    font-weight:$font-weight;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.profile__button{
+    width: 123px;
+    color:$white;
+    font-family:$first-font;
+    font-size: 16px;
+    font-weight:$font-weight;
+    line-height: 20px;
+    text-transform: uppercase;
+    background-color: #68b738;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+.page-header {
+  display: flex;
+  min-height: 65px;
+}
+
+.page-header__wrapper {
+  width: 223px;
+  margin: 0 auto;
+}
+
+.page-header__logo {
+  height: 45px;
+  width: 212px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    min-height: 96px;
+  }
+
+  .page-header__logo {
+    height: 58px;
+    width: 178px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    min-height: 131px;
+  }
+
+  .page-header__logo {
+    height: 59px;
+    width: 202px;
+  }
+}

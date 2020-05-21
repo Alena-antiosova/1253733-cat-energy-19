@@ -7,27 +7,51 @@
 </head>
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="https://via.placeholder.com/150x150" width="33" height="38" alt="Логотип Кэт энерджи">
-    </a>
-    <nav class="page-header__main-nav main-nav main-nav--inner">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="Index.html">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link">Каталог продукции</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="Forms.html">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="container">
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo">
+          <img src="#" width="33" height="38" alt="Логотип Кэт энерджи">
+        </a>
+      </div>
+      <nav class="page-header__main-nav main-nav main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link" href="Catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="Forms.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
+
+  <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
+
 <main>
   <section class="catalog">
-    <div class="layout">
+    <div class="container">
       <h1 class="catalog__title">Каталог продукции</h1>
       <ul class="catalog__list">
         <li class="catalog__item">
@@ -247,10 +271,11 @@
 
           </article>
         </li>
-        
+
       </ul>
     </div>
   </section>
+
   <section class="optional-catalog">
     <div class="optional-catalog__wrapper">
       <h2 class="optional-catalog__title">Дополнительные товары</h2>

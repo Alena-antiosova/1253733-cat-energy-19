@@ -6,35 +6,55 @@
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 <body>
-<header class="page-header">
-  <div class="page-header__logo-wrapper">
-    <a class="page-header_logo">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="33" height="38" alt="Логотип Кэт энерджи">
-    </a>
-    <h1 class="page-header__logo-header"></h1>
-  </div>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--active">
-          <a>Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="Catalog.html">Каталог продукции</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="Forms.html">Подбор программы</a>
-        </li>
-      </ul>
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo">
+          <img src="#" width="33" height="38" alt="Логотип Кэт энерджи">
+        </a>
+      </div>
+      <nav class="page-header__main-nav main-nav main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link" href="Catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="Forms.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-  </nav>
-</header>
+  </header>
+
+  <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
+
+
 <main class="page-main">
   <div class="page-main__form-wrapper">
     <section class="profile">
       <h1 class="profile__title">Подбор программы</h1>
-      <p class="profile__text">Заполните анкету и мы подберем программу питания для вашего кота</span>
+      <p class="profile__text"><span>Заполните анкету и мы подберем программу питания для вашего кота</span>
         <form class="profile-application" method="GET" action="#">
           <ul class="profile__list">
             <li class="profile__item">
@@ -108,6 +128,7 @@
     </section>
   </div>
 </main>
+
 <footer class="page-footer">
   <section class="page-footer__contacts contacts">
     <h2 class="visually-hidden">Контактная информация</h2>
@@ -142,5 +163,3 @@
 </footer>
 </body>
 </html>
-
-

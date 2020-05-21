@@ -1,4 +1,4 @@
-@import "../../node_modules/normalize.css/normalize";
+@import "node_modules/normalize.css/normalize";
 @import "global/fonts.scss";
 @import "global/variablees.scss";
 @import "global/mixin.scss";
@@ -16,7 +16,3 @@
 @import "block/product.scss";
 @import "block/optional-catalog.scss";
 @import "block/profile.scss";
-
-
-
-
